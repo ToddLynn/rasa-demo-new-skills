@@ -105,7 +105,7 @@ stories:
     steps:
       - intent: inform
       - action: utter_curry
-      - action: action_curry
+#      - action: action_curry
 
 #  - story: test1
 #    steps:

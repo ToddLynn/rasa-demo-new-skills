@@ -121,15 +121,6 @@ responses:
       text: "text 2"
     - text: "text 3"
 
-#  utter_curry:
-#    - condition:
-#        - type: slot
-#          name: cuisine
-#          value: french
-#      text: "i like {cuisine}"
-#    - text: "text 2"
-
-
 
   utter_t1:
     - text: "text 1"

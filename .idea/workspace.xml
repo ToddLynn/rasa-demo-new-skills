@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c8966de-060d-477f-aa1a-22efca17ef20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
       <workItem from="1630977096626" duration="14823000" />
       <workItem from="1631063412591" duration="15236000" />
       <workItem from="1631158482173" duration="919000" />
-      <workItem from="1631159611048" duration="3438000" />
+      <workItem from="1631159611048" duration="3805000" />
     </task>
     <task id="LOCAL-00001" summary="日志-分支逻辑技能-用custom action实现&#10;时间-12:00-20210909">
       <created>1631160154065</created>
@@ -51,7 +50,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631160154065</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="日志-分支逻辑技能-用utter 里设置condition 来实现&#10;时间-14:15-20210909">
+      <created>1631168226636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631168226636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,13 +65,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="日志-分支逻辑技能-用custom action实现&#10;时间-12:00-20210909" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志-分支逻辑技能-用custom action实现&#10;时间-12:00-20210909" />
+    <MESSAGE value="日志-分支逻辑技能-用utter 里设置condition 来实现&#10;时间-14:15-20210909" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志-分支逻辑技能-用utter 里设置condition 来实现&#10;时间-14:15-20210909" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1631160153255">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1631168225914">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1631160153255" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1631168225914" />
     <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1631081811097">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -74,6 +81,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="221" y="74" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1630648734546" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1631168175309">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1631168175309" />
     <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630920611943">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

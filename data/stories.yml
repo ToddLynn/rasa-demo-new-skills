@@ -101,32 +101,32 @@ version: "2.0"
 
 
 stories:
-  - story: test slot_was_set slot_fill
-    steps:
-      - intent: inform
-      - action: utter_curry
+#  - story: test slot_was_set slot_fill
+#    steps:
+#      - intent: inform
+#      - action: utter_curry
 #      - action: action_curry
 
-#  - story: test1
-#    steps:
-#      - intent: inform
-#      - slot_was_set:
-#        - cuisine: french
-#      - action: utter_t1
-#
-#  - story: test2
-#    steps:
-#      - intent: inform
-#      - slot_was_set:
-#        - cuisine: english
-#      - action: utter_t2
-#
-#  - story: test3
-#    steps:
-#      - intent: inform
-#      - slot_was_set:
-#        - cuisine: asian
-#      - action: utter_t3
+  - story: test1
+    steps:
+      - intent: inform
+      - slot_was_set:
+        - cuisine: french
+      - action: utter_t1
+
+  - story: test2
+    steps:
+      - intent: inform
+      - slot_was_set:
+        - cuisine: english
+      - action: utter_t2
+
+  - story: test3
+    steps:
+      - intent: inform
+      - slot_was_set:
+        - cuisine: asian
+      - action: utter_t3
 
 
 

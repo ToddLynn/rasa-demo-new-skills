@@ -1,0 +1,144 @@
+version: "2.0"
+  ##
+  ##stories:
+  ##
+  ##- story: happy path
+  ##  steps:
+  ##  - intent: greet
+  ##  - action: utter_greet
+  ##  - intent: goodbye
+  ##  - action: utter_goodbye
+  ###
+  ####- story: sad path 1
+  ####  steps:
+  ####  - intent: greet
+  ####  - action: utter_greet
+  ####  - intent: mood_unhappy
+  ####  - action: utter_cheer_up
+  ####  - action: utter_did_that_help
+  ####  - intent: affirm
+  ####  - action: utter_happy
+  ####
+  ####- story: sad path 2
+  ####  steps:
+  ####  - intent: greet
+  ####  - action: utter_greet
+  ####  - intent: mood_unhappy
+  ####  - action: utter_cheer_up
+  ####  - action: utter_did_that_help
+  ####  - intent: deny
+  ####  - action: utter_goodbye
+  ###
+  ###- story: test ask age
+  ###  steps:
+  ###  - intent: greet
+  ###  - action: utter_ask_name
+  ###  - intent: name
+  ###  - action: utter_ask_age
+  ##
+  ###- story: test ask age with form
+  ###  steps:
+  ###  - intent: greet
+  ###  - action: chat_form
+  ###  - active_loop: chat_form
+  ###  - active_loop: null
+  ###  - action: utter_did_that_help
+  ##
+  ##
+  ##
+  ##
+  ###- story: true to form
+  ###  steps:
+  ###  - intent: greet
+  ###  - action: utter_greet
+  ###  - slot_was_set:
+  ###    - happy: true
+  ###  - action: utter_iamabot
+  ###  - action: chat_form
+  ###  - active_loop: chat_form
+  ###  - active_loop: null
+  ##
+  ###- story: false to form
+  ###  steps:
+  ###  - intent: greet
+  ###  - action: utter_greet
+  ###  - slot_was_set:
+  ###    - happy: false
+  ###  - action: utter_goodbye
+  ##
+  ##- story: slot_fill
+  ##  steps:
+  ##  - intent: greet
+  ##  - action: utter_greet
+  ##  - slot_was_set:
+  ##    - happy: true
+  ##  - action: utter_iamabot
+  ##  - action: chat_form
+  ##  - active_loop: chat_form
+  ##  - active_loop: null
+  #
+  #
+  #stories:
+  #- story: French cuisine
+  #  steps:
+  #  - intent: inform
+  #  - slot_was_set:
+  #    - cuisine: french
+  ##    - cuisine_name: frenchum
+  #  - intent: greet
+  #  - action: utter_i_like
+
+#stories:
+#  - story: test slot_was_set slot_fill
+#    steps:
+#      - intent: inform
+##      - slot_was_set:
+##        - cuisine: french
+#      - action: utter_i_like
+
+
+
+
+
+stories:
+  - story: test slot_was_set slot_fill
+    steps:
+      - intent: inform
+      - action: utter_curry
+      - action: action_curry
+
+#  - story: test1
+#    steps:
+#      - intent: inform
+#      - slot_was_set:
+#        - cuisine: french
+#      - action: utter_t1
+#
+#  - story: test2
+#    steps:
+#      - intent: inform
+#      - slot_was_set:
+#        - cuisine: english
+#      - action: utter_t2
+#
+#  - story: test3
+#    steps:
+#      - intent: inform
+#      - slot_was_set:
+#        - cuisine: asian
+#      - action: utter_t3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

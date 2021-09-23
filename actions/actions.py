@@ -27,25 +27,35 @@ from rasa_sdk.executor import CollectingDispatcher
 #         return []
 
 
-class ActionCurry(Action):
+# class ActionCurry(Action):
+#
+#     def name(self) -> Text:
+#         return "action_curry"
+#
+#     # def run(self, dispatcher: CollectingDispatcher,
+#     #         tracker: Tracker,
+#     #         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#     #
+#     #     dispatcher.utter_message(text="Hello World!")
+#     #
+#     #     return []
+#
+#     def run(self, dispatcher, tracker, domain):
+#         cuisine = tracker.get_slot("cuisine")
+#         if cuisine =="french":
+#             dispatcher.utter_message(template="utter_t1")
+#         elif cuisine =="english":
+#             dispatcher.utter_message(template="utter_t2")
+#         else:
+#             dispatcher.utter_message(template="utter_t3")
+#         return []
 
-    def name(self) -> Text:
-        return "action_curry"
+# class ActionGetAccountBalance(Action):
+#     def name(self) -> Text:
+#         return "action_get_account_balance"
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         dispatcher.utter_message(text="Your current account balance is $1532.00")
+#         return []
 
-    # def run(self, dispatcher: CollectingDispatcher,
-    #         tracker: Tracker,
-    #         domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-    #
-    #     dispatcher.utter_message(text="Hello World!")
-    #
-    #     return []
-
-    def run(self, dispatcher, tracker, domain):
-        cuisine = tracker.get_slot("cuisine")
-        if cuisine =="french":
-            dispatcher.utter_message(template="utter_t1")
-        elif cuisine =="english":
-            dispatcher.utter_message(template="utter_t2")
-        else:
-            dispatcher.utter_message(template="utter_t3")
-        return []

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c8966de-060d-477f-aa1a-22efca17ef20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nlu.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/rules.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/stories.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_train_code.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_train_code.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_stories.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +47,17 @@
       <workItem from="1630977096626" duration="14823000" />
       <workItem from="1631063412591" duration="15236000" />
       <workItem from="1631158482173" duration="919000" />
-      <workItem from="1631159611048" duration="3805000" />
+      <workItem from="1631159611048" duration="6238000" />
+      <workItem from="1631503468551" duration="147000" />
+      <workItem from="1631503626738" duration="3993000" />
+      <workItem from="1631512835880" duration="12363000" />
+      <workItem from="1631582670812" duration="3000" />
+      <workItem from="1631582686989" duration="11923000" />
+      <workItem from="1631668370183" duration="1996000" />
+      <workItem from="1631673544687" duration="2483000" />
+      <workItem from="1631754925696" duration="599000" />
+      <workItem from="1631783525475" duration="33000" />
+      <workItem from="1632364709132" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="日志-分支逻辑技能-用custom action实现&#10;时间-12:00-20210909">
       <created>1631160154065</created>
@@ -57,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631168226636</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="日志-分支逻辑技能-在story里，用多个story的slot_was_set来实现&#10;时间-14:25-20210909">
+      <created>1631168670834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631168670834</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,25 +89,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="日志-分支逻辑技能-用custom action实现&#10;时间-12:00-20210909" />
     <MESSAGE value="日志-分支逻辑技能-用utter 里设置condition 来实现&#10;时间-14:15-20210909" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志-分支逻辑技能-用utter 里设置condition 来实现&#10;时间-14:15-20210909" />
+    <MESSAGE value="日志-分支逻辑技能-在story里，用多个story的slot_was_set来实现&#10;时间-14:25-20210909" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志-分支逻辑技能-在story里，用多个story的slot_was_set来实现&#10;时间-14:25-20210909" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1631168225914">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1631168670142">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1631168225914" />
-    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1631081811097">
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1440.860@0.0.1440.860" timestamp="1631168670142" />
+    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1631675925527">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1631081811097" />
+    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1631675925527" />
     <state x="221" y="74" key="SettingsEditor" timestamp="1630648734546">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="221" y="74" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1630648734546" />
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1631168175309">
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1631168692130">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1631168175309" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1631168692130" />
     <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630920611943">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -93,9 +117,9 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="320" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.860@0.0.1440.860" timestamp="1631065867422" />
-    <state x="422" y="164" width="596" height="532" key="find.popup" timestamp="1631065901854">
+    <state x="422" y="164" width="596" height="532" key="find.popup" timestamp="1631514538998">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="422" y="164" width="596" height="532" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1631065901854" />
+    <state x="422" y="164" width="596" height="532" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1631514538998" />
   </component>
 </project>

@@ -1,13 +1,7 @@
 version: "2.0"
 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
+- rule: Check my account balance
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: check_account_balance
+  - action: utter_get_account_balance

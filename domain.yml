@@ -1,178 +1,74 @@
-#version: "2.0"
-#
-#intents:
-#  - greet
-#  - goodbye
-#  - affirm
-#  - deny
-#  - mood_great
-#  - mood_unhappy
-#  - bot_challenge
-#  - name
-#
-#responses:
-#  utter_greet:
-#  - text: "Hey! How are you?"
-#
-#  utter_cheer_up:
-#  - text: "Here is something to cheer you up:"
-#    image: "https://i.imgur.com/nGF1K8f.jpg"
-#
-#
-#  utter_did_that_help:
-#  - text: "Did that help you?"
-#
-#  utter_happy:
-#  - text: "Great, carry on!"
-#
-#  utter_goodbye:
-#  - text: "Bye"
-#
-#  utter_iamabot:
-#  - text: "I am a bot, powered by Rasa."
-#
-#  utter_ask_name:
-#    - text: "what's your name ?"
-#
-#  utter_ask_age:
-#    - text: "How old are you ?"
-#
-#
-##  utter_ask_age:
-##    - condition:
-##        - type: slot
-##          name: name
-##          value: Tim
-##      text: "Yes,{name},How old are you ?"
-##    - text: "No,{name},You name is not him?"
-#
-#slots:
-#  name:
-#    type: text
-#    influence_conversation: False
-#  age:
-#    type: text
-#    influence_conversation: False
-#  happy:
-#    type: text
-#    influence_conversation: true
-#
-#forms:
-#  chat_form:
-#    required_slots:
-#      name:
-#        - type: from_text
-#      age:
-#        - type: from_text
-#
-#
-#session_config:
-#  session_expiration_time: 60
-##  carry_over_slots_to_new_session: false
-#  carry_over_slots_to_new_session: true
-#
-
-
 version: "2.0"
+entities:
+  - num_pay
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - name
-  - inform
-
-actions:
-  - action_curry
+  - pay_credit_card
+  - transfer_money
+  - num_pay
+  - check_account_balance
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
 
-  utter_i_like:
-  - text: "i like {cuisine}"
+  utter_ask_accounts:
+    - text: "Which of these credit accounts do you want to make a payment towards?A or B"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_ask_num_pay:
+    - text: "How much do you want to pay?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_ask_person_transfer:
+    - text: "Who would you like to transfer money to?"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_ask_num_transfer:
+    - text: "How much would you like to transfer money to?"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  utter_curry:
-    - condition:
-        - type: slot
-          name: cuisine
-          value: french
-      text: "text 1"
-    - condition:
-        - type: slot
-          name: cuisine
-          value: english
-      text: "text 2"
-    - text: "text 3"
+  utter_continue_credit_card_payment:
+    - text: "aaa"
+  utter_get_account_balance:
+    - text: "Your current account balance is $1532.00"
 
 
-  utter_t1:
-    - text: "text 1"
-
-  utter_t2:
-    - text: "text 2"
-
-  utter_t3:
-    - text: "text 3"
-
-entities:
-  - cuisine
+actions:
+  - action_get_account_balance
 
 slots:
-  cuisine:
-    type: categorical
-    influence_conversation: true
-    values:
-      - french
-      - english
-      - asian
+  accounts:
+    type: text
+    influence_conversation: false
+  num_pay:
+    type: text
+    influence_conversation: false
 
-#    cuisine:
-#    type: text
-#    influence_conversation: false
+  num_transfer:
+    type: text
+    influence_conversation: false
 
-
-
-
-#    auto_fill: false
-#  name:
-#    type: text
-#    influence_conversation: False
-#  age:
-#    type: text
-#    influence_conversation: False
-#  happy:
-#    type: text
-#    influence_conversation: true
+  person_transfer:
+    type: text
+    influence_conversation: false
 
 
 
-#forms:
-#  chat_form:
-#    required_slots:
-#      name:
-#        - type: from_text
-#      age:
-#        - type: from_text
+forms:
+  credit_card_payment_form:
+    required_slots:
+      num_pay:
+        - type: from_entity
+          entity: num_pay
+      accounts:
+        - type: from_text
+  transfer_money_form:
+    required_slots:
+      num_transfer:
+        - type: from_text
+      person_transfer:
+        - type: from_text
+
+
+
 
 
 session_config:
   session_expiration_time: 10
   carry_over_slots_to_new_session: false
-#  carry_over_slots_to_new_session: true
+
